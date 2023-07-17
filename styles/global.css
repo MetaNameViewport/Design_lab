@@ -1,0 +1,23 @@
+fieldset {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+
+    border-width: 2px;
+    border-style: solid;
+}
+
+fieldset legend {
+    padding-left: calc(100vw * 85 / 1366);
+    padding-right: calc(100vw * 85 / 1366);
+}
+
+.fieldset-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body { overflow-x: hidden; }
+
+#home {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('../images/home_bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.home-center-text {
+    width: 30%;
+    height: 27%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 5%;
+}
+
+#about-us {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services {
+    width: 100%;
+    height: 52%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/services_bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#what-we-do {
+    width: 100%;
+    height: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do-content {
+    width: 60%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.what-we-do-content div {
+    width: 100%;
+    height: 27%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.what-we-do-content div p {
+    text-align: center;
+}
+
+#gallery {
+    width: 100%;
+    
+    height: 50%;
+    
+    /*
+    height: 45.05597014925373%;
+    */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5vw;
+}
+
+#gallery div {
+    display: flex;
+    align-items: end;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transform: scale(1);
+
+    transition: all .3s;
+}
+
+#gallery div:hover {
+    transform: scale(1.1);
+}
+
+#gallery div h2 {
+    padding-left: calc(100vw * 20 / 1366);
+    padding-bottom: calc(100vw * 20 / 1366);
+}
+
+#contact-us {
+    width: 100%;
+    height: 55.69029850746269%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.contact-us-content {
+    width: 60%;
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.contact-us-content button {
+    width: 100%;
+    height: 100%;
+
+    background: #3c3c3c;
+
+    border: none;
+}
+
+.contact-us-bottom {
+    width: 16.5%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
