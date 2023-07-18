@@ -25,10 +25,8 @@ function handleScroll() {
     
     if (bottomY >= sections[sections.length - 1][1]) {
         window.removeEventListener('scroll', handleScroll);
-        console.log('removed at bottomY = ', bottomY)
     }
     
-
     for (let section of sections) {
         if ( section[1] / 4 <= bottomY && section[1] >= bottomY ) {
             section[0].style[section[2].animationProperty] = section[2].animationValue;

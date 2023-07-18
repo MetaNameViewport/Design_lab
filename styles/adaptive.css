@@ -1,0 +1,78 @@
+@media screen and (max-width: 600px) {
+    section {
+        transform: none !important;
+        transition: none !important;
+    }
+
+    fieldset {
+        width: 80% !important;
+    }
+
+    ._14px-font { font-size: calc(100vw * 40 / 1920); }
+    ._15px-font { font-size: calc(100vw * 35 / 1920); }
+    ._16px-font { font-size: calc(100vw * 55 / 1920); }
+    ._20px-font { font-size: calc(100vw * 60 / 1920); }
+    ._30px-font { font-size: calc(100vw * 65 / 1920); }
+    ._34px-font { font-size: calc(100vw * 70 / 1920); }
+    ._54px-font { font-size: calc(100vw * 100 / 1920); }
+
+    ._24px-line { line-height: calc(100vw * 65 / 1920); }
+    ._25px-line { line-height: calc(100vw * 70 / 1920); }
+    ._29px-line { line-height: calc(100vw * 80 / 1920); }
+    ._1d2-line { line-height: 1.2; }
+
+    .home-logo {
+        width: calc(100vw * 0.1) !important;
+        margin-top: 70% !important;
+    }
+
+    .home-center-text {
+        width: 60%;
+        height: 12%;
+
+        margin-top: 10%;
+    }
+
+    .home-bottom-img {
+        width: calc(100vw * 0.05) !important;
+
+        margin-top: 10% !important;
+    }
+
+    #about-us {
+        height: 60%;
+    }
+
+    #services {
+        height: 40%;
+    }
+
+    #what-we-do {
+        height: 90%;
+    }
+
+    #gallery {
+        height: 20%;
+    }
+
+    #contact-us {
+        height: 70%;
+    }
+
+    .fieldset-text {
+        width: 90% !important;
+        height: 80% !important;
+    }
+
+    .what-we-do-content {
+        width: 85%;
+    }
+
+    .contact-us-content {
+        width: 80%;
+    }
+
+    .contact-us-bottom {
+        width: 40%;
+    }
+}
