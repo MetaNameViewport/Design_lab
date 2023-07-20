@@ -20,40 +20,41 @@
 
 <body>
     <section id="home">
-        <img src="images/home_logo.png" style="width: calc(100vw * 65 / 1920); margin-top: 10%;" class="home-logo" alt="Logo">
-        
-        <div class="home-center-text center">
+        <div class="home__content-center center">
             <h1 class="_54px-font _1d2-line w700 _0d16em upper white">Working with design lab</h1>
+            
             <h2 class="_15px-font _29px-line w400 _0d06em upper white">
                 We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, Design and product management.
             </h2>
         </div>
-
-        <!-- idk what is the function of this element -->
-        <img src="images/home_bottom_element.png" style="width: calc(100vw * 23 / 1920); margin-top: 10%;" class="home-bottom-img" alt="0">
+        
+        <img src="images/home_logo.png" class="home__logo" alt="Top logo">
+        <img src="images/home_bottom_element.png" class="home__bottom__img" alt="Bottom logo">
     </section>
 
-    <section id="about-us" style="transform: translateX(-100%); transition: 2s;">
-        <fieldset style="height: 55%; justify-content: center; border-color: #3c3c3c;">
-            <legend class="_34px-font _1d2-line _0d16em w700 _3c3c3c upper center">About us</legend>
 
-            <div class="fieldset-text" style="width: 65%; height: 65%;">
-                <p class="_16px-font _24px-line w400 _3c3c3c">
+    <section id="about-us" style="transform: translateX(-100%); transition: 2s;">
+        <fieldset class="about-us__fieldset">
+            <legend class="_34px-font _1d2-line w700 _0d16em _3c3c3c upper">About us</legend>
+
+            <div class="fieldset__container-not-for-jobs about-us__text">
+                <p class="_16px-font _24px-line w400 _3c3c3c about-us__text__p-1">
                     When you work with us, you are part of a team of committed collaborators. All aspects of our software development process are integrated, iterative and agile.
                 </p>
 
-                <p class="_16px-font _24px-line w400 _3c3c3c" style="width: 65%;">
+                <p class="_16px-font _24px-line w400 _3c3c3c about-us__text__p-2">
                     Our approach unifies design, development and product management to create exceptional products. We start each project by understanding your business goals, the user’s needs and the product requirements. Then we help translate them into effective and elegant solutions.
                 </p>
             </div>
-        </fieldset>
+        </fieldset>        
     </section>
 
-    <section id="services" style="opacity: 0; transition: 1.5s;">
-        <fieldset style="height: 55%; justify-content: center; border-color: white;">
-            <legend class="_34px-font _1d2-line _0d16em w700 white upper center">Services</legend>
 
-            <div class="fieldset-text" style="width: 60%; height: 56%;">
+    <section id="services" style="opacity: 0; transition: 1.5s;">
+        <fieldset class="services__fieldset">
+            <legend class="_34px-font _1d2-line w700 _0d16em white upper">Services</legend>
+            
+            <div class="fieldset__container-not-for-jobs services-text">
                 <p class="_16px-font _25px-line w400 white">
                     Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.
                 </p>
@@ -62,17 +63,18 @@
                     The outcome of this scoping session is a proposal or high-level statement of work. Based on your requirements, we can provide a complete offering or just the pieces you need.
                 </p>
             </div>
-            
         </fieldset>
     </section>
 
-    <section id="what-we-do" style="transform: translateX(100%); transition: 1.5s;">
-        <fieldset style="height: 85%; justify-content: center; border-color: #3c3c3c;">
-            <legend class="_34px-font _1d2-line _0d16em w700 _3c3c3c upper center">What we do</legend>
 
-            <div class="what-we-do-content">
-                <div>
-                    <img src="images/what_we_do_img_1.png" style="width: calc(100vw * 80 / 1920);" alt="Img 1">
+    <section id="what-we-do" style="transform: translateX(100%); transition: 1.5s;">
+        <fieldset class="what-we-do__fieldset">
+            <legend class="_34px-font _1d2-line w700 _0d16em _3c3c3c upper">What we do</legend>
+            
+            <div class="what-we-do__container-special">
+                <div class="what-we-do__container__block block-1">
+                    <img src="images/what_we_do_img_1.png" alt="Img 1">
+
                     <h2 class="_20px-font _1d2-line w800 _0d16em _3c3c3c upper">Design</h2>
 
                     <p class="_14px-font _25px-line w400 _3c3c3c">
@@ -80,8 +82,9 @@
                     </p>
                 </div>
 
-                <div>
-                    <img src="images/what_we_do_img_2.png" style="width: calc(100vw * 79 / 1920);" alt="Img 2">
+                <div class="what-we-do__container__block block-2">
+                    <img src="images/what_we_do_img_2.png" alt="Img 2">
+
                     <h2 class="_20px-font _1d2-line w800 _0d16em _3c3c3c upper">Development</h2>
 
                     <p class="_14px-font _25px-line w400 _3c3c3c">
@@ -89,10 +92,11 @@
                     </p>
                 </div>
 
-                <div>
-                    <img src="images/what_we_do_img_3.png" style="width: calc(100vw * 79 / 1920);" alt="Img 3">
+                <div class="what-we-do__container__block block-3">
+                    <img src="images/what_we_do_img_3.png" alt="Img 3">
                     
                     <h2 class="_20px-font _1d2-line w800 _0d16em _3c3c3c upper">Product management</h2>
+
                     <p class="_14px-font _25px-line w400 _3c3c3c">
                         Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.
                     </p>
@@ -100,6 +104,7 @@
             </div>
         </fieldset>
     </section>
+
 
     <section id="gallery">
         <div style="background-image: url(images/gallery_img_1.png);">
@@ -127,6 +132,30 @@
         </div>
     </section>
 
+
+    <section id="contact-us">
+        <fieldset class="contact-us__fieldset">
+            <legend class="_30px-font _1d2-line w700 _0d16em _3c3c3c upper">Contact us</legend>
+        
+            <div class="fieldset__container-not-for-jobs contact-us__textNbutton">
+                <p class="_16px-font _25px-line w400 _3c3c3c">
+                    Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.
+                </p>
+
+                <div class="contact-us__button-container">
+                    <button class="_16px-font _1d2-line w400 _0d16em white upper">Contact us</button>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="contact-us__container-bottom">
+            <img src="images/contact_us_logo.png" style="width: calc(100vw * 35 / 1920);" alt="Logo">
+
+            <p class="_14px-font _1d2-line w400 _3c3c3c">© 2014. All Rights Reserved Ellipsis.com</p>
+        </div>
+    </section>
+    <!--
+
     <section id="contact-us">
         <fieldset style="height: 60%; justify-content: center; border-color: #3c3c3c;">
             <legend class="_30px-font _1d2-line _0d16em w700 _3c3c3c upper center">Contact us</legend>
@@ -148,5 +177,7 @@
             <p class="_14px-font _1d2-line w400 _3c3c3c">© 2014. All Rights Reserved Ellipsis.com</p>
         </div>
     </section>
+
+    -->
 </body>
 </html>
